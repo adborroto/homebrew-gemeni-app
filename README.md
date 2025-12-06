@@ -16,7 +16,7 @@ A lightweight macOS app that brings Google Gemini to your desktop. Access Gemini
 
 ```bash
 brew tap adborroto/gemeni-app
-brew install --cask gemini
+brew install --cask google-gemini
 ```
 
 ### Manual installation
@@ -61,7 +61,9 @@ To build and package for distribution (creates a ZIP file):
 npm run build:dist
 ```
 
-The built app will be in the `dist/` directory. Note: You'll need an `icon.png` file in the project root for the build to include a custom icon.
+The built app will be in the `dist/` directory.
+
+**Note:** You'll need an `icon.icns` file in the project root for the build to include a custom icon. See [ICON_SETUP.md](ICON_SETUP.md) for instructions on creating the icon file.
 
 For Homebrew distribution setup, see [HOMEBREW_SETUP.md](HOMEBREW_SETUP.md).
 

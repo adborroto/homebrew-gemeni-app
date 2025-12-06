@@ -44,4 +44,5 @@ logs/
 *.tmp
 *.temp
 .cache/
+icon.iconset/
 
