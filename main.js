@@ -10,9 +10,6 @@ function createWindow() {
     alwaysOnTop: true,
     roundedCorners: true,
     vibrancy: "sidebar",
-    webPreferences: {
-      preload: __dirname + "/preload.js",
-    },
   });
 
   win.loadURL("https://gemini.google.com/app");
