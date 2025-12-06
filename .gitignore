@@ -13,6 +13,7 @@ build/
 *.app
 *.dmg
 *.pkg
+*.zip
 
 # OS files
 .DS_Store
