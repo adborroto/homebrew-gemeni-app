@@ -1,6 +1,6 @@
 # Homebrew setup guide
 
-This guide explains how to set up your app for Homebrew distribution. Everything is kept in the same repository.
+This guide explains how to set up your app for Homebrew distribution. Everything is kept in the same repository: `homebrew-gemeni-app`, which contains both the source code, releases, and the Homebrew cask file.
 
 ## Step 1: Build and release
 
@@ -11,7 +11,8 @@ npm run build:dist
 ```
 
 2. Create a GitHub release:
-   - Go to https://github.com/adborroto/gemeni-app/releases
+
+   - Go to https://github.com/adborroto/homebrew-gemeni-app/releases
    - Click "Create a new release"
    - Tag version: `v1.0.0` (match the version in the cask)
    - Release title: `v1.0.0`
@@ -26,13 +27,7 @@ The cask file is located at `Casks/gemini.rb` in this repository. Update it when
 
 ## Step 3: Installation
 
-Users can install your app via Homebrew directly from this repository:
-
-```bash
-brew install --cask adborroto/gemeni-app/gemini
-```
-
-Or they can tap the repo first:
+Users can install your app via Homebrew:
 
 ```bash
 brew tap adborroto/gemeni-app
@@ -55,3 +50,4 @@ brew install --cask gemini
 - The cask uses `sha256 :no_check` for now, which skips checksum verification. For production, you should calculate and include the actual SHA256.
 - Make sure the app name in the cask matches the actual `.app` bundle name.
 - Test the installation locally before publishing: `brew install --cask --build-from-source ./Casks/gemini.rb`
+- All releases are created in this repository (`homebrew-gemeni-app`), and the cask file points to them.

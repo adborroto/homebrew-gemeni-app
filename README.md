@@ -15,12 +15,6 @@ A lightweight macOS app that brings Google Gemini to your desktop. Access Gemini
 ### Homebrew (recommended)
 
 ```bash
-brew install --cask adborroto/gemeni-app/gemini
-```
-
-Or tap the repo first:
-
-```bash
 brew tap adborroto/gemeni-app
 brew install --cask gemini
 ```
@@ -37,8 +31,8 @@ brew install --cask gemini
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/adborroto/gemeni-app.git
-cd gemeni-app
+git clone https://github.com/adborroto/homebrew-gemeni-app.git
+cd homebrew-gemeni-app
 ```
 
 2. Install dependencies:

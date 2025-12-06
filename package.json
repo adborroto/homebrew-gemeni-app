@@ -5,7 +5,8 @@
     "scripts": {
         "start": "electron .",
         "build": "electron-packager . Gemini --platform=darwin --arch=x64 --icon=./icon.png --out=./dist --overwrite",
-        "build:dist": "npm run build && cd dist && zip -r Gemini-darwin-x64.zip Gemini-darwin-x64 && cd .."
+        "build:dist": "npm run build && cd dist && zip -r Gemini-darwin-x64.zip Gemini-darwin-x64 && cd ..",
+        "release": "node scripts/release.js"
     },
     "dependencies": {
         "electron": "^30.0.0"
